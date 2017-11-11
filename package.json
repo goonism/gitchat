@@ -1,0 +1,33 @@
+{
+  "name": "gitchat",
+  "version": "1.0.0",
+  "description": "Abstraction on top of the Github API that allows for use of Git as a chat service.",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "babel src -d lib",
+    "prepublish": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/goonism/gitchat.git"
+  },
+  "keywords": [
+    "git",
+    "chat"
+  ],
+  "author": "@coldsauce",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/goonism/gitchat/issues"
+  },
+  "homepage": "https://github.com/goonism/gitchat#readme",
+  "dependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-async-to-generator": "^6.24.1",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-es2017": "^6.24.1",
+    "github-api": "^3.0.0"
+  }
+}
